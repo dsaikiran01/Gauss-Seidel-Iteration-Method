@@ -121,7 +121,7 @@ def main() :
 	input_bool = diagonal_dominant(list_1 , list_2 , list_3)    #gives True or False for declaring dominant or not
 	if input_bool is bool(0) :
 		print("The given equations are NOT Diagonally Dominant.\nHence not solvable.")
-		print('Sorry \U0001F62A !!!')
+		print("Intially , we assume the values of x , y and z to be 'ZERO' i.e.,\nx = 0 ,\ny = 0 ,\nz = 0 .\n\n")
 		repeat()
 	elif input_bool is None :
 		print("The given equations are Loosely Diagonally Dominant.\n\n")
@@ -131,7 +131,7 @@ def main() :
 		print("The given equations are Strictly Diagonally Dominant.\n\n")
 		rearranged_eqns(list_1 , list_2 , list_3)
 		print("\n")
-	print("Intially , we assume the values of x , y and z to be 'ZERO' i.e.,\nx = 0 ,\ny = 0 ,\nz = 0 .\n\n")
+	print("Thus, we initially assume the values of x , y and z to be 'ZERO' i.e.,\nx = 0 ,\ny = 0 ,\nz = 0 .\n\n")
 	x , y , z , i = solve(list_1 , list_2 , list_3) #returned the solved values of x,y and z ...also iterations value
 	#if str(type(i)) == "<class 'int'>":
 	if i < 100 :
